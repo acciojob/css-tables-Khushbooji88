@@ -1,42 +1,83 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
-	<style>
-		td, th{
-			border: 1px solid #ccc;
-			border-radius: 5px;
-			padding: 0.5rem;
-		}
-		tr:nth-child(odd) {
-			background-color: #f2f2f2;
-		}
-		tr:nth-child(even) {
-			background-color: #ffffff;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        table {
+            width: 80%;
+            margin: 50px auto;
+            border-collapse: collapse; /* Remove space between cells */
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0.5rem;
+            text-align: center;
+        }
+
+        /* Apply background color for odd and even rows */
+        tr:nth-child(odd) {
+            background-color: #f2f2f2; /* Odd rows */
+        }
+
+        tr:nth-child(even) {
+            background-color: #ffffff; /* Even rows */
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-<table>
-    <tr>
-        <th>Header 1</th>
-        <th>Header 2</th>
-    </tr>
-    <tr>
-        <td>Data 1</td>
-        <td>Data 2</td>
-    </tr>
-    <tr>
-        <td>Data 3</td>
-        <td>Data 4</td>
-    </tr>
-</table>
-</body>
 
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John Doe</td>
+                <td>30</td>
+                <td>New York</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>25</td>
+                <td>Los Angeles</td>
+            </tr>
+            <tr>
+                <td>Emma Johnson</td>
+                <td>35</td>
+                <td>Chicago</td>
+            </tr>
+            <tr>
+                <td>Michael Brown</td>
+                <td>40</td>
+                <td>Houston</td>
+            </tr>
+            <tr>
+                <td>Alice Davis</td>
+                <td>28</td>
+                <td>San Francisco</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
 </html>
