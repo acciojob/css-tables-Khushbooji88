@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Styled Table</title>
     <style>
+        /* General body styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
+        /* Table styling */
         table {
             width: 80%;
-            margin: 50px auto;
-            border-collapse: collapse; /* Remove space between cells */
+            border-collapse: collapse; /* Collapse borders to make them look continuous */
+            margin-top: 20px;
         }
 
+        /* Styling for table header and data cells */
         th, td {
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -25,19 +32,22 @@
             text-align: center;
         }
 
-        /* Apply background color for odd and even rows */
+        /* Styling for odd rows */
         tr:nth-child(odd) {
-            background-color: #f2f2f2; /* Odd rows */
+            background-color: #f2f2f2;
         }
 
+        /* Styling for even rows */
         tr:nth-child(even) {
-            background-color: #ffffff; /* Even rows */
+            background-color: #ffffff;
         }
 
+        /* Styling for header row */
         th {
             background-color: #4CAF50;
             color: white;
         }
+
     </style>
 </head>
 <body>
